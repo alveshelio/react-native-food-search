@@ -11,6 +11,8 @@ const SearchBar = () => {
       <TextInput
         style={styles.searchInput}
         placeholder='Search'
+        autoCapitalize='none'
+        autoCorrect={false}
         value={searchTerm}
         onChangeText={text => setSearchTerm(text)}
         inlineImageLeft='search_icon'
